@@ -97,15 +97,13 @@ export default function Portfolio() {
           <Card border="dark" className="cardStyle">
             <Card.Img variant="top" src={DatabaseImg} />
             <Card.Body>
-              <Card.Title>Employee Database</Card.Title>
+              <Card.Title>Mint</Card.Title>
               <Card.Text>
-                This application must be ran in the terminal. This is an employee database
-                tracker using MySql. The database contains departments, roles, employess. Employees
-                are linked to roles/departments. Through the terminal you can delete or update information as well.
+              Are you a collector who is interested in selling or buying your stuff? With Mint you can buy and sell anything your collectors heart desires!
               </Card.Text>
-              <Card.Link href="https://github.com/Tarynmoore/Employee-database">
+              <Card.Link href="https://github.com/bunt88/Mint">
                 GitHub</Card.Link>
-              <Card.Link href="https://github.com/Tarynmoore/Employee-database">
+              <Card.Link href="https://mintapplication.herokuapp.com/">
                 Deployed App</Card.Link>
             </Card.Body>
           </Card>
