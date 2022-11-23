@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./components/Container";
-import './App.css';
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import "./App.css"
 
 function App() {
     return (
