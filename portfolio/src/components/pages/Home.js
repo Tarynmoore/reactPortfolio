@@ -1,4 +1,7 @@
 import React from 'react';
+
+import ProgressBar from 'react-bootstrap/ProgressBar';
+
 export default function Home() {
   return (
     <div>
@@ -26,7 +29,7 @@ export default function Home() {
 
           <div className="three columns">
 
-            <img className="profile-pic" src="" alt="" />
+            <img className="profile-pic" src={process.env.PUBLIC_URL + '/images/profilePic.jpeg'} alt="Profile Pic" />
 
           </div>
 
@@ -36,12 +39,41 @@ export default function Home() {
             <p>
               I currently live in Salt Lake City, Utah. I furthered my education
               with the University of Utah's coding program. When I am not coding I enjoy
-              practicing yoga, walking my dog, all things Star Wars, and hiking.
+              practicing yoga, walking my dog, all things Star Wars, and hiking. I am looking
+              forward to my career in tech!
             </p>
           </div>
         </div>
       </section>
 
+
+      <div id='skills'>
+        <h2 className='size'>
+          Skills
+        </h2>
+
+        <p>Html/CSS</p>
+        <ProgressBar now={90}></ProgressBar>
+
+        <p>Javascript</p>
+        <ProgressBar now={70}></ProgressBar>
+
+        <p>React</p>
+        <ProgressBar now={70}></ProgressBar>
+
+        <p>Express.js</p>
+        <ProgressBar now={60}></ProgressBar>
+
+        <p>Node.js</p>
+        <ProgressBar now={40}></ProgressBar>
+
+        <p>MySql</p>
+        <ProgressBar now={50}></ProgressBar>
+
+        <p>Git</p>
+        <ProgressBar now={80}></ProgressBar>
+
+      </div>
 
 
 
