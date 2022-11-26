@@ -1,6 +1,10 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import ProgressBar from 'react-bootstrap/ProgressBar';
+
 
 export default function Home() {
   return (
@@ -17,24 +21,20 @@ export default function Home() {
               a career that constantly involved me learning, so I chose coding!
               Here you will find showcases of my work, and what languages I am best at.
               Please contact with any questions.
-
             </h3>
             <hr />
           </div>
         </div>
       </header>
 
-      <section id="about">
-        <div className="row">
-
-          <div className="three columns">
-
+      <div id="about">
+      <Container sm lg={12} >
+        <Row>
+          <Col sm={2} lg={4} >
             <img className="profile-pic" src={process.env.PUBLIC_URL + '/images/profilePic.jpeg'} alt="Profile Pic" />
+          </Col>
 
-          </div>
-
-          <div className="nine columns main-col">
-
+          <Col sm={4} lg={8}>
             <h2>About Me</h2>
             <p>
               I currently live in Salt Lake City, Utah. I furthered my education
@@ -42,10 +42,10 @@ export default function Home() {
               practicing yoga, walking my dog, all things Star Wars, and hiking. I am looking
               forward to my career in tech!
             </p>
-          </div>
-        </div>
-      </section>
-
+          </Col>
+        </Row>
+      </Container>
+      </div>
 
       <div id='skills'>
         <h2 className='size'>
@@ -56,7 +56,7 @@ export default function Home() {
         <ProgressBar now={90}></ProgressBar>
 
         <p>Javascript</p>
-        <ProgressBar now={70}></ProgressBar>
+        <ProgressBar now={75}></ProgressBar>
 
         <p>React</p>
         <ProgressBar now={70}></ProgressBar>
@@ -74,12 +74,6 @@ export default function Home() {
         <ProgressBar now={80}></ProgressBar>
 
       </div>
-
-
-
-
-
     </div>
   );
-
 }
