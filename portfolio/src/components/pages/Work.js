@@ -4,18 +4,9 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-// Images used for the portfolio
-// import ResumeImg from './image/resumeIllustrator.jpeg'
-// import FansImg from './image/fansOnly.jpeg'
-// import JateImg from './image/jate.jpeg'
-// import SocialImg from './image/socialmedia.jpeg'
-// import DatabaseImg from './image/database.jpeg'
-// import PlannerImg from './image/planner.jpeg'
-
-
 export default function Portfolio() {
   return (
-    <div >
+    <div className="card">
       <Row xs={1} md={2}>
         <Col>
           <Card border="dark" className="cardStyle">
@@ -41,25 +32,24 @@ export default function Portfolio() {
 
         <Col>
           <Card border="dark" className="cardStyle">
-            <Card.Img 
-            className="fans"
-            variant="top" 
-             src={process.env.PUBLIC_URL + '/images/work/fansOnly.jpeg'}
-            alt="resume"  />
+            <Card.Img variant="top"  
+            src={process.env.PUBLIC_URL + '/images/work/planner.jpeg'} 
+            alt="resume" />
             <Card.Body>
-              <Card.Title>Fans-Only</Card.Title>
+              <Card.Title>Daily Planner</Card.Title>
               <Card.Text>
-                This application is for people who are fans of anything! When you type in the name in the search bar the page will show a giph
-                and list of youtube video's you can view! This app uses 2 API's, html, css, and javascript.
+                This application works as a daily planner. Using jQuery and Moment,js
+                you are able to save your plan for the hour. As time goes on throughout the daily
+                the planner will change colors. Your plans are also saved to localstorage so you won't be
+                able to miss them!
               </Card.Text>
-              <Card.Link href="https://github.com/rtarasevich/Fans-Only">
+              <Card.Link href="https://github.com/Tarynmoore/Daily-Planner">
                 GitHub</Card.Link>
-              <Card.Link href="https://rtarasevich.github.io/Fans-Only/">
+              <Card.Link href="https://tarynmoore.github.io/Daily-Planner/">
                 Deployed App</Card.Link>
             </Card.Body>
           </Card>
         </Col>
-        
       </Row>
 
 
@@ -85,23 +75,22 @@ export default function Portfolio() {
           </Card>
         </Col>
 
-
         <Col>
           <Card border="dark" className="cardStyle">
-            <Card.Img variant="top"  
-            src={process.env.PUBLIC_URL + '/images/work/planner.jpeg'} 
-            alt="resume" />
+            <Card.Img 
+            className="fans"
+            variant="top" 
+             src={process.env.PUBLIC_URL + '/images/work/fansOnly.jpeg'}
+            alt="resume"  />
             <Card.Body>
-              <Card.Title>Daily Planner</Card.Title>
+              <Card.Title>Fans-Only</Card.Title>
               <Card.Text>
-                This application works as a daily planner. Using jQuery and Moment,js
-                you are able to save your plan for the hour. As time goes on throughout the daily
-                the planner will change colors. Your plans are also saved to localstorage so you won't be
-                able to miss them!
+                This application is for people who are fans of anything! When you type in the name in the search bar the page will show a giph
+                and list of youtube video's you can view! This app uses 2 API's, html, css, and javascript.
               </Card.Text>
-              <Card.Link href="https://github.com/Tarynmoore/Daily-Planner">
+              <Card.Link href="https://github.com/rtarasevich/Fans-Only">
                 GitHub</Card.Link>
-              <Card.Link href="https://tarynmoore.github.io/Daily-Planner/">
+              <Card.Link href="https://rtarasevich.github.io/Fans-Only/">
                 Deployed App</Card.Link>
             </Card.Body>
           </Card>
@@ -111,37 +100,3 @@ export default function Portfolio() {
   )
 }
 
-      // <Col>
-      //     <Card border="dark" className="cardStyle">
-      //       {/* <Card.Img variant="top" src={JateImg} /> */}
-      //       <Card.Body>
-      //         <Card.Title>J. A. T. E. </Card.Title>
-      //         <Card.Text>
-      //           Just another text editor! This application showcases the use of IndexedDb to
-      //           store objects. It also can be working without internet connection, uses Webpack, and uses
-      //           a service worker to cache.
-      //         </Card.Text>
-      //         <Card.Link href="https://github.com/Tarynmoore/J.A.T.E">
-      //           GitHub</Card.Link>
-      //         <Card.Link href="https://polar-tundra-42330.herokuapp.com/">
-      //           Deployed App</Card.Link>
-      //       </Card.Body>
-      //     </Card>
-      //   </Col>
-      
-
-    //   <Col>
-    //   <Card border="dark" className="cardStyle">
-    //     {/* <Card.Img variant="top" src={DatabaseImg} /> */}
-    //     <Card.Body>
-    //       <Card.Title>Mint</Card.Title>
-    //       <Card.Text>
-    //       Are you a collector who is interested in selling or buying your stuff? With Mint you can buy and sell anything your collectors heart desires!
-    //       </Card.Text>
-    //       <Card.Link href="https://github.com/bunt88/Mint">
-    //         GitHub</Card.Link>
-    //       <Card.Link href="https://mintapplication.herokuapp.com/">
-    //         Deployed App</Card.Link>
-    //     </Card.Body>
-    //   </Card>
-    // </Col>

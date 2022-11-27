@@ -255,17 +255,14 @@ ul#nav li a:active {
 /* i. Work 
 /* ------------------------------------------------------------------ */
 
-.cardStyle {
+.card {
     margin-top: 2em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-.fans {
-    height: 50%;
-}
 
 
 
