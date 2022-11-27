@@ -1,11 +1,5 @@
 import React from 'react';
 
-// const styles = {
-//   text: {
-//     color: 'black'
-//   }
-// }
-
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <section>
