@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home'
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Work from './pages/Work';
 import Resume from './pages/Resume';
+// import Contact from './pages/Contact';
 
 export default function Container() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -12,11 +12,11 @@ export default function Container() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+    // if (currentPage === 'Contact') {
+    //   return <Contact />;
+    // }
+    if (currentPage === 'Work') {
+      return <Work />;
     }
     return <Resume />;
   };

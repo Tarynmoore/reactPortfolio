@@ -6,32 +6,18 @@ import Col from 'react-bootstrap/Col';
 // import pdf from './image/resume22.pdf's
 
 export default function Resume() {
-    return(
-        <div>
-         <Row xs={12}>
-            <h1 className="line name">Want to know more?</h1>
-        </Row>
-
-        <Container>
-                <Row>
-                <Col xs={12}>
-                    <h3 >Languages I have mastered</h3>
-                    <h5>Frontend:</h5>
-                    <p>HTML, CSS, React, Javascript, jQuery</p>
-                    <h5>Backend:</h5>
-                    <p>Express, NoSQL, mySQL, NOde.js, MongoDb</p>
-                </Col>
-                <Col>
-                {/* <a href={pdf} download>Download my resume!</a> */}
-                </Col>
-                </Row>
-
-        </Container>
-
-
-
-
-
+    return (
+        <div className="resume">
+            <Col>
+                <a className="download"
+                    href={process.env.PUBLIC_URL + '/images/resume22.pdf'} download>
+                    Download my resume!
+                </a>
+            </Col>
+            <img src={process.env.PUBLIC_URL + '/images/resume1.jpeg'} alt="resume" />
+            <img src={process.env.PUBLIC_URL + '/images/resume2.jpeg'} alt="resume" />
         </div>
     )
 }
+
+
