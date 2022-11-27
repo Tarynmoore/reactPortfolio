@@ -19,7 +19,10 @@ export default function Portfolio() {
       <Row xs={1} md={2}>
         <Col>
           <Card border="dark" className="cardStyle">
-            {/* <Card.Img variant="top" src={ResumeImg} /> */}
+            <Card.Img variant="top" 
+            src={process.env.PUBLIC_URL + '/images/work/resumeIllustration.jpeg'} 
+            alt="resume" 
+            />
             <Card.Body>
               <Card.Title>Resume Builder</Card.Title>
               <Card.Text>
@@ -38,7 +41,11 @@ export default function Portfolio() {
 
         <Col>
           <Card border="dark" className="cardStyle">
-            {/* <Card.Img variant="top" src={FansImg} /> */}
+            <Card.Img 
+            className="fans"
+            variant="top" 
+             src={process.env.PUBLIC_URL + '/images/work/fansOnly.jpeg'}
+            alt="resume"  />
             <Card.Body>
               <Card.Title>Fans-Only</Card.Title>
               <Card.Text>
@@ -60,7 +67,9 @@ export default function Portfolio() {
       <Row xs={1} md={2}>
         <Col>
           <Card border="dark" className="cardStyle">
-            {/* <Card.Img variant="top" src={SocialImg} /> */}
+            <Card.Img variant="top"  
+            src={process.env.PUBLIC_URL + '/images/work/socialmedia.jpeg'} 
+            alt="resume"  />
             <Card.Body>
               <Card.Title>Social Media</Card.Title>
               <Card.Text>
@@ -79,7 +88,9 @@ export default function Portfolio() {
 
         <Col>
           <Card border="dark" className="cardStyle">
-            {/* <Card.Img variant="top" src={PlannerImg} /> */}
+            <Card.Img variant="top"  
+            src={process.env.PUBLIC_URL + '/images/work/planner.jpeg'} 
+            alt="resume" />
             <Card.Body>
               <Card.Title>Daily Planner</Card.Title>
               <Card.Text>
