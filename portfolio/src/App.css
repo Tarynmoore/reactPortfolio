@@ -1,9 +1,5 @@
 /* 
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
 
    TOC:
    a. General Styles
@@ -212,9 +208,13 @@ ul#nav li a:active {
 /* ------------------------------------------------------------------ */
 
 .footer {
-    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; */
+    display: block;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     margin-top: 1rem;
     padding: 10px;
     background-color: #2B2B2B;
@@ -224,10 +224,9 @@ ul#nav li a:active {
     width: 100%;
 }
 
-.footer button {
-    margin-left: 10px;
+.gitLogo {
+    margin-left: 25em;
 }
-
 
 /* ------------------------------------------------------------------ */
 /* i. Resume 
@@ -343,6 +342,13 @@ ul#nav li a:active {
    .resume img {
     width: 100%;
     height: 120%;
+   }
+
+     /* Footer Section
+   ------------------------------------------------------------------- */
+
+   .gitLogo {
+    margin-left: 5em;
    }
 }
 
