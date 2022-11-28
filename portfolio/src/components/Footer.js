@@ -11,25 +11,23 @@ const Footer = () => {
             <footer >
                 <Container sm={12} lg={12} >
                     <Row>
+                        <Col className="gitLogo">
+                        <a href="https://github.com/Tarynmoore">
+                            <button
+                                className="footButton">
+                                <Github size={40} />
+                            </button>
+                        </a>
+                        </Col>
                         <Col>
-                            <a href="https://github.com/Tarynmoore">
-                                <button
-                                    className="footButton">
-                                    <Github size={40} />
-                                </button>
-                            </a>
-                            </Col>
-                            </Row>
-                            <Row>
-                            <Col>
-                            <a href="https://www.linkedin.com/in/taryn-moore-a4466b7a/">
-                                <button
-                                    className="footButton">
-                                    <Linkedin size={40} />
-                                </button>
-                            </a>
-                            </Col>
-                            </Row>
+                        <a href="https://www.linkedin.com/in/taryn-moore-a4466b7a/">
+                            <button
+                                className="footButton">
+                                <Linkedin size={40} />
+                            </button>
+                        </a>
+                        </Col>
+                    </Row>
                 </Container>
             </footer>
         </div>
