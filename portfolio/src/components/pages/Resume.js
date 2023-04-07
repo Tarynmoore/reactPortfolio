@@ -10,12 +10,13 @@ export default function Resume() {
         <div className="resume">
             <Col>
                 <a className="download"
-                    href={process.env.PUBLIC_URL + '/images/resume22.pdf'} download>
+                    href={process.env.PUBLIC_URL + '/images/tech-resume22.pdf'} download>
                     Download my resume!
                 </a>
             </Col>
-            <img src={process.env.PUBLIC_URL + '/images/resume1.jpeg'} alt="resume" />
-            <img src={process.env.PUBLIC_URL + '/images/resume2.jpeg'} alt="resume" />
+            <img src={process.env.PUBLIC_URL + '/images/RERESUME1.png'} alt="resume" />
+            <img src={process.env.PUBLIC_URL + '/images/RERESUME2.png'} alt="resume" />
+            <img src={process.env.PUBLIC_URL + '/images/RERESUME3.png'} alt="resume" />
         </div>
     )
 }
